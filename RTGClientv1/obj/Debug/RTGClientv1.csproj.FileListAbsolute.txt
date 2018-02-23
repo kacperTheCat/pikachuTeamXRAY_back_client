@@ -46,3 +46,6 @@ C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\obj\Debug\RTGClientv1.csp
 C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\obj\Debug\RTGClientv1.csproj.CoreCompileInputs.cache
 C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\obj\Debug\RTGClientv1.dll
 C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\obj\Debug\RTGClientv1.pdb
+C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\bin\System.Web.Cors.dll
+C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\bin\System.Web.Http.Cors.dll
+C:\Users\matutluk\source\repos\RTGClientv1\RTGClientv1\bin\System.Web.Http.Cors.xml
