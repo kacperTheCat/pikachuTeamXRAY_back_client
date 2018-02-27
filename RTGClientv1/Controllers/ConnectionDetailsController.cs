@@ -15,10 +15,10 @@ namespace RTGClientv1.Controllers
     {
         // GET: api/ConnectionInfo
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<ConnectionDetails> Get()
+        public async Task<ConnectionDetails> Get()
         {
             ConnectionDetails connectionInfo = new ConnectionDetails();
-            return connectionInfo.GetConnectionDetails();
+            return await connectionInfo.GetConnectionDetails().ConfigureAwait(false);
         }
     }
 }
