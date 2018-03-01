@@ -104,3 +104,11 @@ C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\Autofac.dll
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\Autofac.Integration.WebApi.dll
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\Autofac.xml
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\Autofac.Integration.WebApi.xml
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ContractLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ImageAcquisitionLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\TestsLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ContractLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ImageAcquisitionLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\TestsLibrary.pdb

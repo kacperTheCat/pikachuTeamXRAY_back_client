@@ -1,44 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using RTGClientv1.Models;
+using ContractLibrary.Models;
+using ServicesLibrary.Interfaces;
 
 namespace RTGClientv1.Controllers
 {
     public class CameraController : ApiController
     {
+
+        private readonly IImageService _imageService;
+
+        public CameraController(IImageService imageService)
+        {
+            _imageService = imageService;
+        }
+
         // GET: api/Camera
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public async Task<CameraImage> Get()
+        public Task<CameraImageResponse> GetImage()
         {
-            CameraImage cameraImage = new CameraImage();
-            return await cameraImage.GetImage();
-        }
+            var cameraImageResponse = _imageService.GetImage();
 
-        // GET: api/Camera/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/Camera
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/Camera/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Camera/5
-        public void Delete(int id)
-        {
+            return cameraImageResponse;
         }
     }
 }

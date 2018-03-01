@@ -1,0 +1,12 @@
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\obj\Debug\ServicesLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\obj\Debug\ServicesLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ServicesLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ServicesLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ContractLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ImageAcquisitionLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ContractLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ImageAcquisitionLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\Newtonsoft.Json.xml

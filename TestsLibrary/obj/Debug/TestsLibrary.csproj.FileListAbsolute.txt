@@ -1,0 +1,8 @@
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\bin\Debug\TestsLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\bin\Debug\TestsLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\obj\Debug\TestsLibrary.csprojResolveAssemblyReference.cache
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\obj\Debug\TestsLibrary.csproj.CoreCompileInputs.cache
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\obj\Debug\TestsLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\obj\Debug\TestsLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.xml

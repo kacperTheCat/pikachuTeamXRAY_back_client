@@ -1,0 +1,10 @@
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\bin\Debug\ImageAcquisitionLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\bin\Debug\ImageAcquisitionLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\bin\Debug\ContractLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\bin\Debug\ContractLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\obj\Debug\DataAcquisition.csproj.CoreCompileInputs.cache
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\obj\Debug\ImageAcquisitionLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\obj\Debug\ImageAcquisitionLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ImageAcquisitionLibrary\obj\Debug\DataAcquisition.csprojResolveAssemblyReference.cache
