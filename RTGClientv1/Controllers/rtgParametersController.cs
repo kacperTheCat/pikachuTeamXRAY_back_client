@@ -18,6 +18,7 @@ namespace RTGClientv1.Controllers
         // GET: api/rtgParameters/5
         public string Get(int id)
         {
+            int test = 6;
             return "value";
         }
 

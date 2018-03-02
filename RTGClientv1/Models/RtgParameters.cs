@@ -7,5 +7,6 @@ namespace RTGClientv1.Models
 {
     public class RtgParameters
     {
+        int test = 6;
     }
 }
