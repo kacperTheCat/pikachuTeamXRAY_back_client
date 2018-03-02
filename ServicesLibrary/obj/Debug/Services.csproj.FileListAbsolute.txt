@@ -10,3 +10,16 @@ C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\Newtonsoft.Json
 C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ContractLibrary.pdb
 C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\ImageAcquisitionLibrary.pdb
 C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\ServicesLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\ServicesLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\ImageAcquisitionLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\ImageAcquisitionLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\ServicesLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\ServicesLibrary.pdb

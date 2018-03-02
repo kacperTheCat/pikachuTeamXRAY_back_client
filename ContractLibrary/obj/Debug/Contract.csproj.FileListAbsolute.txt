@@ -6,3 +6,11 @@ C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\Contract.csproj
 C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\Contract.csproj.CoreCompileInputs.cache
 C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\ContractLibrary.dll
 C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\Contract.csprojResolveAssemblyReference.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\Contract.csproj.CoreCompileInputs.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.xml
