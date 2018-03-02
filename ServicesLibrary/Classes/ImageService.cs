@@ -2,6 +2,7 @@
 using ImageAcquisitionLibrary.Interfaces;
 using ContractLibrary.Models;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace ServicesLibrary.Classes
 {
@@ -16,7 +17,7 @@ namespace ServicesLibrary.Classes
         public Task<CameraImageResponse> GetImage()
         {
             var cameraImageResponse = _imageAcquisition.GetImage();
-
+            
             return cameraImageResponse;
         }
     }

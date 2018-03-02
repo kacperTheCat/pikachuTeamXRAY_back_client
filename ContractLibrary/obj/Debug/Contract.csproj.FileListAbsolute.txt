@@ -1,7 +1,8 @@
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\ContractLibrary.dll
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\ContractLibrary.pdb
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.dll
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.xml
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\Contract.csproj.CoreCompileInputs.cache
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\ContractLibrary.dll
-C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\ContractLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\bin\Debug\ContractLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\bin\Debug\ContractLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\Contract.csprojResolveAssemblyReference.cache
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\Contract.csproj.CoreCompileInputs.cache
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\ContractLibrary.dll
+C:\PikachuTeam\PikachuTeam_back_client\ContractLibrary\obj\Debug\ContractLibrary.pdb
