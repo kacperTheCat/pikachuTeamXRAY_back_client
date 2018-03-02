@@ -6,3 +6,10 @@ C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\obj\Debug\TestsLibrary.dll
 C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\obj\Debug\TestsLibrary.pdb
 C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.dll
 C:\PikachuTeam\PikachuTeam_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\bin\Debug\TestsLibrary.dll
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\bin\Debug\TestsLibrary.pdb
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\obj\Debug\TestsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\obj\Debug\TestsLibrary.dll
+C:\Users\hudzipau\Desktop\RTG project\pikachuTeamXRAY_back_client\TestsLibrary\obj\Debug\TestsLibrary.pdb
