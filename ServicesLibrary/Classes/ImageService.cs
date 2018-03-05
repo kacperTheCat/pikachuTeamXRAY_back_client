@@ -11,11 +11,17 @@ namespace ServicesLibrary.Classes
     public class ImageService : IImageService
     {
         private readonly IImageAcquisition _imageAcquisition;
+        public Bitmap image;
 
         public ImageService(IImageAcquisition imageAcquisition)
         {
             _imageAcquisition = imageAcquisition;
         }
+
+        public ImageService()
+        {
+        }
+
         public Bitmap FromBase64Converter(string image)
         {
             byte[] imageBytes = System.Convert.FromBase64String(image);
