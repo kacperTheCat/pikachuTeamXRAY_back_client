@@ -71,13 +71,19 @@ namespace ServicesLibrary.Classes
         public async Task<CameraImageResponse> GetImage()
         {
             var cameraImageResponse = await _imageAcquisition.GetImage();
+            
+            return cameraImageResponse;
+        }
+        public async Task<CameraImageResponse> GetBlackAndWhiteImage()
+        {
+            var cameraImageResponse = await _imageAcquisition.GetImage();
             string base64image = cameraImageResponse.Base64;
             MemoryStream stream = new MemoryStream();
             BlackAndWhiteImage(FromBase64Converter(base64image)).Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
             byte[] imageStreamByteArray = stream.ToArray();
             //File.WriteAllBytes(@"C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\lastFrame.jpg", imageStreamByteArray);
             //File.WriteAllText(@"C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\lastFrame.txt", ToBase64Converter(imageStreamByteArray));
-
+            cameraImageResponse.Base64 = ToBase64Converter(imageStreamByteArray);
             return cameraImageResponse;
         }
 

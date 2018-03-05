@@ -24,5 +24,12 @@ namespace RTGClientv1.Controllers
 
             return cameraImageResponse;
         }
+        [Route("api/Camera/Capture")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        public Task<CameraImageResponse> GetBlackAndWhiteImage()
+        {
+            var cameraImageResponse = _imageService.GetBlackAndWhiteImage();
+            return cameraImageResponse;
+        }
     }
 }

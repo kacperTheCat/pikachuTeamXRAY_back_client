@@ -1,5 +1,7 @@
 ﻿using ContractLibrary.Interfaces;
+using ContractLibrary.Models;
 using System.Drawing;
+using System.Threading.Tasks;
 
 namespace ServicesLibrary.Interfaces
 {
@@ -9,5 +11,6 @@ namespace ServicesLibrary.Interfaces
         Bitmap BlackAndWhiteImage(Bitmap image);
         Bitmap GreyscaleImage(Bitmap image);
         string ToBase64Converter(byte[] imageBytes);
+        Task<CameraImageResponse> GetBlackAndWhiteImage();
     }
 }

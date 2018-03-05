@@ -13,3 +13,4 @@ C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\TestsLibrary\obj\Deb
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\TestsLibrary\obj\Debug\TestsLibrary.csproj.CoreCompileInputs.cache
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\TestsLibrary\obj\Debug\TestsLibrary.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\TestsLibrary\obj\Debug\TestsLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\TestsLibrary\bin\Debug\Newtonsoft.Json.dll
