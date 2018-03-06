@@ -47,6 +47,7 @@
     <Compile Include="Interfaces\IConnectionDetails.cs" />
     <Compile Include="Models\CameraImageResponse.cs" />
     <Compile Include="Models\ConnectionDetailsResponse.cs" />
+    <Compile Include="Models\RtgParametersRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -42,7 +42,7 @@ namespace RTGClientv1.Controllers
             //string url = @"http://localhost:3000/profile";
             //var json = new WebClient().DownloadString(url);
             string output = JsonConvert.SerializeObject(rtgParametersRequest);
-            File.WriteAllText(@"C:\Users\hudzipau\Desktop\RTG project\jsonTest.txt", output);
+            //File.WriteAllText(@"C:\Users\hudzipau\Desktop\RTG project\jsonTest.txt", output);
             return rtgParametersRequest;
         }
 

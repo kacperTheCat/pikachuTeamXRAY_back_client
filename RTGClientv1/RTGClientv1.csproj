@@ -194,6 +194,7 @@
     <Compile Include="Controllers\CameraController.cs" />
     <Compile Include="Controllers\ConnectionDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RtgParametersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -283,10 +284,6 @@
     <ProjectReference Include="..\ServicesLibrary\Services.csproj">
       <Project>{f286eeb0-7d59-4cbf-b528-9121b6f901cb}</Project>
       <Name>Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServicesTests\Tests.csproj">
-      <Project>{ef92cdda-ca2e-443a-b809-c76eccab69cb}</Project>
-      <Name>Tests</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
