@@ -18,9 +18,7 @@ namespace ServicesLibrary.Classes
             _imageAcquisition = imageAcquisition;
         }
 
-        public ImageService()
-        {
-        }
+
 
         public Bitmap FromBase64Converter(string image)
         {

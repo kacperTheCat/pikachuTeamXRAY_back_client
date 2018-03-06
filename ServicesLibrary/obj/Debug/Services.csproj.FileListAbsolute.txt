@@ -23,3 +23,4 @@ C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\Services.csproj.CoreCompileInputs.cache
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\ServicesLibrary.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Debug\ServicesLibrary.pdb
+C:\PikachuTeam\PikachuTeam_back_client\ServicesLibrary\bin\Debug\System.Drawing.Primitives.dll

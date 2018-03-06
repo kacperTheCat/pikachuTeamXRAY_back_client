@@ -107,11 +107,9 @@ C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\Autofac.Integration.WebAp
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ContractLibrary.dll
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ImageAcquisitionLibrary.dll
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesLibrary.dll
-C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\TestsLibrary.dll
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ContractLibrary.pdb
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ImageAcquisitionLibrary.pdb
 C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesLibrary.pdb
-C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\TestsLibrary.pdb
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\ApplicationInsights.config
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\RTGClientv1.dll.config
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\RTGClientv1.dll
@@ -175,3 +173,13 @@ C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\obj\Debu
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\obj\Debug\RTGClientv1.csproj.CoreCompileInputs.cache
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\obj\Debug\RTGClientv1.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\obj\Debug\RTGClientv1.pdb
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesTests.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\FluentAssertions.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesTests.pdb
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\ServicesTests.dll.config
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\FluentAssertions.pdb
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\FluentAssertions.xml
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\pl\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\System.ValueTuple.dll
+C:\PikachuTeam\PikachuTeam_back_client\RTGClientv1\bin\System.ValueTuple.xml

@@ -284,9 +284,9 @@
       <Project>{f286eeb0-7d59-4cbf-b528-9121b6f901cb}</Project>
       <Name>Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestsLibrary\TestsLibrary.csproj">
-      <Project>{26d5d1f9-a10b-4638-9000-1f95ecccec35}</Project>
-      <Name>TestsLibrary</Name>
+    <ProjectReference Include="..\ServicesTests\Tests.csproj">
+      <Project>{ef92cdda-ca2e-443a-b809-c76eccab69cb}</Project>
+      <Name>Tests</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
