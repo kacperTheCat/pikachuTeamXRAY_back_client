@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ContractLibrary.Models;
+using ServicesLibrary.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,8 +11,16 @@ namespace RTGClientv1.Controllers
 {
     public class RtgParametersController : ApiController
     {
-        // GET: api/RtgParameters
-        public IEnumerable<string> Get()
+        public class RtgParametersController : ApiController
+        {
+            private readonly IImageService _imageService;
+
+            public RtgParametersController(IImageService imageService)
+            {
+                _imageService = imageService;
+            }
+            // GET: api/RtgParameters
+            public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
