@@ -10,7 +10,8 @@ namespace RTGClientv1.Controllers
     {
 
         private readonly IImageService _imageService;
-
+        
+        
         public CameraController(IImageService imageService)
         {
             _imageService = imageService;
@@ -32,7 +33,15 @@ namespace RTGClientv1.Controllers
         public Task<CameraImageResponse> GetXRAYImage([FromBody]CameraImageCaptureRequest cameraImageCaptureRequest)
         {
             var cameraImageResponse = _imageService.GetXRAYImage(cameraImageCaptureRequest);
+            
             return cameraImageResponse;
+            
+            
         }
+      /*  private async void Wait10sec(object sender, System.EventArgs eventArgs)
+        {
+            System.Threading.Thread.Sleep(10000);
+            busy = false;
+        }*/
     }
 }

@@ -10,9 +10,9 @@ namespace ContractLibrary.Models
     {
         public int light;
         public int contrast;
-        public bool blackWhite;
+        public bool medianFilter;
         public string patientName;
-        public string user;
+        public string userName;
         public string imageDate;
         public string imageTime;
 

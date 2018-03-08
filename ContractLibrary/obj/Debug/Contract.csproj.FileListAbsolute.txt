@@ -13,3 +13,4 @@ C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\ContractLibrary.pdb
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Debug\Contract.csprojResolveAssemblyReference.cache
