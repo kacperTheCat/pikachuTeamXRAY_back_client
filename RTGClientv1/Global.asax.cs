@@ -39,6 +39,8 @@ namespace RTGClientv1
             builder.RegisterType<ImageAcquisition>().As<IImageAcquisition>();
             builder.RegisterType<ConnectionService>().As<IConnectionService>();
             builder.RegisterType<ConnectionAcquisition>().As<IConnectionAcquisition>();
+            builder.RegisterType<LoginAcquisition>().As<ILoginAcquisition>();
+            builder.RegisterType<LoginValidationService>().As<ILoginValidationService>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

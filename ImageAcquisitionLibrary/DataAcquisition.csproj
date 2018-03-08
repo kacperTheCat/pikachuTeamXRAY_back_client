@@ -45,8 +45,11 @@
   <ItemGroup>
     <Compile Include="Classes\ConnectionAcquisition.cs" />
     <Compile Include="Classes\ImageAcquisition.cs" />
+    <Compile Include="Classes\LoginAcquisition.cs" />
+    <Compile Include="Classes\UserMock.cs" />
     <Compile Include="Interfaces\IConnectionAcquisition.cs" />
     <Compile Include="Interfaces\IImageAcquisition.cs" />
+    <Compile Include="Interfaces\ILoginAcquisition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
