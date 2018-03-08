@@ -4,5 +4,6 @@ namespace ImageAcquisitionLibrary.Interfaces
 {
     public interface IImageAcquisition : ICameraImage
     {
+        void CreateCaptureLogForImage(string image);
     }
 }

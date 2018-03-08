@@ -11,6 +11,6 @@ namespace ServicesLibrary.Interfaces
         Bitmap BlackAndWhiteImage(Bitmap image);
         Bitmap GreyscaleImage(Bitmap image);
         string ToBase64Converter(byte[] imageBytes);
-        Task<CameraImageResponse> GetBlackAndWhiteImage();
+        Task<CameraImageResponse> GetBlackAndWhiteImage(CameraImageCaptureRequest rtgParametersRequest);
     }
 }

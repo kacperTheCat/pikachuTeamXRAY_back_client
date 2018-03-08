@@ -31,7 +31,7 @@ namespace ServicesTests.ControllersTests
         public void RTGParametersControllerPostTest()
         {
             var controller = new RtgParametersController(_imageService);
-            var postJson = new RtgParametersRequest();
+            var postJson = new CameraImageCaptureRequest();
 
             postJson.light = 1;
             postJson.contrast = 2;

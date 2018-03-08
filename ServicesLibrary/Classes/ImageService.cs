@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System;
 
 namespace ServicesLibrary.Classes
 {
@@ -72,15 +73,21 @@ namespace ServicesLibrary.Classes
             string base64string = System.Convert.ToBase64String(imageBytes);
             return base64string;
         }
-        public async Task<CameraImageResponse> GetImage()
+        public async Task<CameraImageResponse> GetImage(CameraImageCaptureRequest cameraImageCaptureRequest)
         {
-            var cameraImageResponse = await _imageAcquisition.GetImage();
-            
+            var cameraImageResponse = await _imageAcquisition.GetImage(cameraImageCaptureRequest);
+
             return cameraImageResponse;
         }
-        public async Task<CameraImageResponse> GetBlackAndWhiteImage()
+        public async Task<CameraImageResponse> GetPerview()
         {
-            var cameraImageResponse = await _imageAcquisition.GetImage();
+            var cameraImageResponse = await _imageAcquisition.GetPerview();
+
+            return cameraImageResponse;
+        }
+        public async Task<CameraImageResponse> GetBlackAndWhiteImage(CameraImageCaptureRequest cameraImageCaptureRequest)
+        {
+            var cameraImageResponse = await _imageAcquisition.GetImage(cameraImageCaptureRequest);
             string base64image = cameraImageResponse.Base64;
             MemoryStream stream = new MemoryStream();
             BlackAndWhiteImage(FromBase64Converter(base64image)).Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
@@ -90,6 +97,5 @@ namespace ServicesLibrary.Classes
             cameraImageResponse.Base64 = ToBase64Converter(imageStreamByteArray);
             return cameraImageResponse;
         }
-
     }
 }
