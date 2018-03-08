@@ -22,7 +22,6 @@ namespace ImageAcquisitionLibrary.Classes
 
         public void CreateCaptureLogForImage(string image)
         {
-            //Test log
             using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(@"C:\PikachuTeam\log.txt", true))
             {

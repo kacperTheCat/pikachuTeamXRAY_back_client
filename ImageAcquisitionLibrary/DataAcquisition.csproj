@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AuditLogsAcquisition.cs" />
     <Compile Include="Classes\ConnectionAcquisition.cs" />
     <Compile Include="Classes\ImageAcquisition.cs" />
     <Compile Include="Classes\LoginAcquisition.cs" />
     <Compile Include="Classes\UserMock.cs" />
+    <Compile Include="Interfaces\IAuditLogsAcquisition.cs" />
     <Compile Include="Interfaces\IConnectionAcquisition.cs" />
     <Compile Include="Interfaces\IImageAcquisition.cs" />
     <Compile Include="Interfaces\ILoginAcquisition.cs" />

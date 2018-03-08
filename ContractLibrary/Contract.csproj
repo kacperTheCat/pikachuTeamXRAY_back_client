@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAuditLog.cs" />
     <Compile Include="Interfaces\ICameraImage.cs" />
     <Compile Include="Interfaces\IConnectionDetails.cs" />
     <Compile Include="Interfaces\ILoginValidation.cs" />
+    <Compile Include="Models\AuditLogResponse.cs" />
     <Compile Include="Models\CameraImageResponse.cs" />
     <Compile Include="Models\ConnectionDetailsResponse.cs" />
     <Compile Include="Models\CameraImageCaptureRequest.cs" />
