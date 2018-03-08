@@ -19,9 +19,9 @@ namespace RTGClientv1.Controllers
         // GET: api/Camera
         [HttpGet]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<CameraImageResponse> GetImage()
+        public Task<CameraImageResponse> GetPreviewImage()
         {
-            var cameraImageResponse = _imageService.GetPerview();
+            var cameraImageResponse = _imageService.GetPerviewImage();
 
             return cameraImageResponse;
         }
@@ -29,9 +29,9 @@ namespace RTGClientv1.Controllers
         [HttpPost]
         [Route("api/Camera/Capture")]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<CameraImageResponse> GetBlackAndWhiteImage([FromBody]CameraImageCaptureRequest cameraImageCaptureRequest)
+        public Task<CameraImageResponse> GetXRAYImage([FromBody]CameraImageCaptureRequest cameraImageCaptureRequest)
         {
-            var cameraImageResponse = _imageService.GetImage(cameraImageCaptureRequest);
+            var cameraImageResponse = _imageService.GetXRAYImage(cameraImageCaptureRequest);
             return cameraImageResponse;
         }
     }

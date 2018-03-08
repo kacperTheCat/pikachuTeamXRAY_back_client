@@ -5,7 +5,7 @@ namespace ContractLibrary.Interfaces
 {
     public interface ICameraImage
     {
-        Task<CameraImageResponse> GetImage(CameraImageCaptureRequest rtgParametersRequest);
-        Task<CameraImageResponse> GetPerview();
+        Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest);
+        Task<CameraImageResponse> GetPerviewImage();
     }
 }

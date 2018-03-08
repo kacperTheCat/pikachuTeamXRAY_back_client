@@ -11,7 +11,7 @@ namespace ImageAcquisitionLibrary.Classes
 {
     public class ImageAcquisition : IImageAcquisition
     {
-        public async Task<CameraImageResponse> GetPerview()
+        public async Task<CameraImageResponse> GetPerviewImage()
         {
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync("http://localhost:63766/api/camera");
@@ -30,7 +30,7 @@ namespace ImageAcquisitionLibrary.Classes
             }
         }
 
-        public async Task<CameraImageResponse> GetImage(CameraImageCaptureRequest rtgParametersRequest)
+        public async Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest rtgParametersRequest)
         {
             HttpClient client = new HttpClient();
             StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(rtgParametersRequest), Encoding.UTF8, "application/json");

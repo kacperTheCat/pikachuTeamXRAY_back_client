@@ -31,7 +31,7 @@ namespace ServicesLibrary.Classes.Tests
             Bitmap image = new Bitmap(Image.FromFile(@"C:\Users\matutluk\Desktop\1.jpg"));
             //Bitmap GreyImage = null;
             ImageService service = new ImageService(_imageAcquisition);
-            service.image = service.GreyscaleImage(image);
+           // service.image = service.GreyscaleImage(image);
             service.image.Should().NotBeNull();
             //Assert.Fail();
         }

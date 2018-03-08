@@ -20,15 +20,15 @@ namespace ServicesLibrary.Classes
         }
 
 
-        public async Task<CameraImageResponse> GetImage(CameraImageCaptureRequest cameraImageCaptureRequest)
+        public async Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest)
         {
-            var cameraImageResponse = await _imageAcquisition.GetImage(cameraImageCaptureRequest);
+            var cameraImageResponse = await _imageAcquisition.GetXRAYImage(cameraImageCaptureRequest);
 
             return cameraImageResponse;
         }
-        public async Task<CameraImageResponse> GetPerview()
+        public async Task<CameraImageResponse> GetPerviewImage()
         {
-            var cameraImageResponse = await _imageAcquisition.GetPerview();
+            var cameraImageResponse = await _imageAcquisition.GetPerviewImage();
 
             return cameraImageResponse;
         }
