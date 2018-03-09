@@ -20,7 +20,7 @@ namespace ImageAcquisitionLibrary.Classes
             // Read the file and display it line by line.  
             if (File.Exists(@"c:\PikachuTeam\log.txt")){
                 System.IO.StreamReader file =
-                    new System.IO.StreamReader(@"c:\PikachuTeam\log.txt");
+                    new System.IO.StreamReader(System.AppDomain.CurrentDomain.BaseDirectory+"log.txt");
                 while ((logLine = file.ReadLine()) != null)
                 {
                     auditLog = JsonConvert.DeserializeObject<AuditLogResponse>(logLine);

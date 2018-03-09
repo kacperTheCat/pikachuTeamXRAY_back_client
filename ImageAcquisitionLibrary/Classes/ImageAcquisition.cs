@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System;
 using System.Text;
+using System.IO;
 
 namespace ImageAcquisitionLibrary.Classes
 {
@@ -22,8 +23,9 @@ namespace ImageAcquisitionLibrary.Classes
 
         public void CreateCaptureLogForImage(string image)
         {
+            
             using (System.IO.StreamWriter file =
-                new System.IO.StreamWriter(@"C:\PikachuTeam\log.txt", true))
+                new System.IO.StreamWriter(System.AppDomain.CurrentDomain.BaseDirectory+"log.txt", true))
             {
                 file.WriteLine(image);
             }
