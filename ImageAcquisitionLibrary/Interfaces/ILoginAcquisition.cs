@@ -11,5 +11,7 @@ namespace ImageAcquisitionLibrary.Interfaces
     public interface ILoginAcquisition : ILoginValidation
     {
         LoginValidationResponse ValidateLoginRequest(LoginValidationRequest loginValidationRequest);
+        byte[] encryptionProvidedPasswordUsingActualSaltPassword(string passwordProvided, string actualPasswordHashed);
+        bool comperePasswordsHash(byte[] passwordProvidedHashed, byte[] actualPasswordHashedWithSalt);
     }
 }
