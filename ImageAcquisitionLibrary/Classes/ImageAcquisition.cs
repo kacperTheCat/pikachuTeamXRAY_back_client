@@ -29,6 +29,17 @@ namespace ImageAcquisitionLibrary.Classes
             {
                 file.WriteLine(image);
             }
+
+        }
+
+        public void SaveImage(string base64StringImage)
+        {
+            var bytes = Convert.FromBase64String(base64StringImage);
+            using (var imageFile = new FileStream(System.AppDomain.CurrentDomain.BaseDirectory+"c.jpg", FileMode.Create))
+            {
+                imageFile.Write(bytes, 0, bytes.Length);
+                imageFile.Flush();
+            }
         }
 
         public async Task<CameraImageResponse> GetImage(CameraImageCaptureRequest rtgParametersRequest)
@@ -39,7 +50,9 @@ namespace ImageAcquisitionLibrary.Classes
             response.EnsureSuccessStatusCode();
             CreateCaptureLogForImage(JsonConvert.SerializeObject(rtgParametersRequest));
             string responseBody = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
+            var convertedResponseBody = JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
+            SaveImage(convertedResponseBody.Base64);
+            return convertedResponseBody;
         }
     }
 }
