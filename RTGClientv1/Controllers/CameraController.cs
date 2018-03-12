@@ -21,6 +21,7 @@ namespace RTGClientv1.Controllers
         [HttpGet]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         public Task<CameraImageResponse> GetPreviewImage(int machineID)
+
         {
             var cameraImageResponse = _imageService.GetPerviewImage(machineID);
 

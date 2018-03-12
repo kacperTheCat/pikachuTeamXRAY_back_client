@@ -47,10 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AuditLogsService.cs" />
     <Compile Include="Classes\ConnectionService.cs" />
     <Compile Include="Classes\ImageService.cs" />
+    <Compile Include="Classes\LoginValidationService.cs" />
+    <Compile Include="Interfaces\IAuditLogsService.cs" />
     <Compile Include="Interfaces\IConnectionService.cs" />
     <Compile Include="Interfaces\IImageService.cs" />
+    <Compile Include="Interfaces\ILoginValidationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
