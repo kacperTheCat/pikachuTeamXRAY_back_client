@@ -1,0 +1,8 @@
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Release\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Release\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Release\Newtonsoft.Json.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\bin\Release\Newtonsoft.Json.xml
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Release\Contract.csprojResolveAssemblyReference.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Release\Contract.csproj.CoreCompileInputs.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Release\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ContractLibrary\obj\Release\ContractLibrary.pdb

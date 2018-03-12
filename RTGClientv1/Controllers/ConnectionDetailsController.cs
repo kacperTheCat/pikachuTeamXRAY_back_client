@@ -17,11 +17,12 @@ namespace RTGClientv1.Controllers
 
         //GET: api/ConnectionInfo
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<ConnectionDetailsResponse> GetDetails()
+        public Task<ConnectionDetailsResponse> GetDetails(int machineID)
         {
-            var connectionDetailsResponse = _connectionService.GetDetails();
+            var connectionDetailsResponse = _connectionService.GetDetails(machineID);
 
             return connectionDetailsResponse;
         }
+        
     }
 }

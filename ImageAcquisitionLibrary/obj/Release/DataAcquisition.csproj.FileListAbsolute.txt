@@ -1,0 +1,10 @@
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\bin\Release\ImageAcquisitionLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\bin\Release\ImageAcquisitionLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\bin\Release\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\bin\Release\Newtonsoft.Json.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\bin\Release\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\bin\Release\Newtonsoft.Json.xml
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\obj\Release\DataAcquisition.csprojResolveAssemblyReference.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\obj\Release\DataAcquisition.csproj.CoreCompileInputs.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\obj\Release\ImageAcquisitionLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ImageAcquisitionLibrary\obj\Release\ImageAcquisitionLibrary.pdb

@@ -1,0 +1,13 @@
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\ServicesLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\ServicesLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\ContractLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\ImageAcquisitionLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\Newtonsoft.Json.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\System.Drawing.Primitives.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\ContractLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\ImageAcquisitionLibrary.pdb
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\bin\Release\Newtonsoft.Json.xml
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Release\Services.csprojResolveAssemblyReference.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Release\Services.csproj.CoreCompileInputs.cache
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Release\ServicesLibrary.dll
+C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesLibrary\obj\Release\ServicesLibrary.pdb

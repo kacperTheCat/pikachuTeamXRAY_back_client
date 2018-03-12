@@ -6,6 +6,6 @@ namespace ContractLibrary.Interfaces
     public interface ICameraImage
     {
         Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest);
-        Task<CameraImageResponse> GetPerviewImage();
+        Task<CameraImageResponse> GetPerviewImage(int machineID);
     }
 }

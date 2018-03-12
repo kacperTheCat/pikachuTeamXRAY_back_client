@@ -35,7 +35,7 @@ namespace ServicesTests.ControllersTests
 
             postJson.light = 1;
             postJson.contrast = 2;
-            postJson.blackWhite = true;
+         //   postJson.blackWhite = true;
             postJson.patientName = "Marek";
             
          //   var response = controller.Post(postJson);

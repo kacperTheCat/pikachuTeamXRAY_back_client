@@ -48,6 +48,7 @@
     <Compile Include="Models\CameraImageCaptureRequest.cs" />
     <Compile Include="Models\CameraImageResponse.cs" />
     <Compile Include="Models\ConnectionDetailsResponse.cs" />
+    <Compile Include="Models\RTGMachines.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

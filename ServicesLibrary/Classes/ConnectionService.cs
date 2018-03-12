@@ -13,9 +13,9 @@ namespace ServicesLibrary.Classes
         {
             _connectionAcquisition = connectionAcquisition;
         }
-        public Task<ConnectionDetailsResponse> GetDetails()
+        public Task<ConnectionDetailsResponse> GetDetails(int machineID)
         {
-            var connectionDetailseResponse = _connectionAcquisition.GetDetails();
+            var connectionDetailseResponse = _connectionAcquisition.GetDetails(machineID);
 
             return connectionDetailseResponse;
         }
