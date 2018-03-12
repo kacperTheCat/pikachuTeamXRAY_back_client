@@ -142,12 +142,10 @@ C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\Syst
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\System.Web.WebPages.Deployment.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\System.Web.WebPages.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\System.Web.WebPages.Razor.dll
-C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\TestsLibrary.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\WebGrease.dll
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\ContractLibrary.pdb
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\ImageAcquisitionLibrary.pdb
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\ServicesLibrary.pdb
-C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\TestsLibrary.pdb
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\Autofac.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\Autofac.Integration.WebApi.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\RTGClientv1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml

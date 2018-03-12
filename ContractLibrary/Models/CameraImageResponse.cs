@@ -10,5 +10,6 @@ namespace ContractLibrary.Models
     public class CameraImageResponse
     {
         public string Base64 { get; set; }
+        public string errorMessage;
     }
 }

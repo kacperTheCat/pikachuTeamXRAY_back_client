@@ -9,12 +9,11 @@ namespace ImageAcquisitionLibrary.Classes
 {
     public class ConnectionAcquisition : IConnectionAcquisition
     {
-        public async Task<ConnectionDetailsResponse> GetDetails()
+        public async Task<ConnectionDetailsResponse> GetDetails(int machineID)
         {
-            var connectionDetailsResponse = new ConnectionDetailsResponse();
-
+            var connectionDetailsResponse = new ConnectionDetailsResponse();            
             HttpClient client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync("http://localhost:63766/api/connectiondetails");
+            HttpResponseMessage response = await client.GetAsync("http://"+RTGMachines.RTGMachineAddress[machineID]+ "/api/connectiondetails");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             response.EnsureSuccessStatusCode();

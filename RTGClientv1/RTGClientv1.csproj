@@ -196,7 +196,6 @@
     <Compile Include="Controllers\ConnectionDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginValidationController.cs" />
-    <Compile Include="Controllers\RtgParametersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

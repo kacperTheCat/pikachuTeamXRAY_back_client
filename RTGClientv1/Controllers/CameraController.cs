@@ -10,7 +10,8 @@ namespace RTGClientv1.Controllers
     {
 
         private readonly IImageService _imageService;
-
+        
+        
         public CameraController(IImageService imageService)
         {
             _imageService = imageService;
@@ -19,9 +20,10 @@ namespace RTGClientv1.Controllers
         // GET: api/Camera
         [HttpGet]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<CameraImageResponse> GetPerview()
+        public Task<CameraImageResponse> GetPreviewImage(int machineID)
+
         {
-            var cameraImageResponse = _imageService.GetPerview();
+            var cameraImageResponse = _imageService.GetPerviewImage(machineID);
 
             return cameraImageResponse;
         }
@@ -29,10 +31,18 @@ namespace RTGClientv1.Controllers
         [HttpPost]
         [Route("api/Camera/Capture")]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<CameraImageResponse> GetImage([FromBody]CameraImageCaptureRequest cameraImageCaptureRequest)
+        public Task<CameraImageResponse> GetXRAYImage([FromBody]CameraImageCaptureRequest cameraImageCaptureRequest)
         {
-            var cameraImageResponse = _imageService.GetImage(cameraImageCaptureRequest);
+            var cameraImageResponse = _imageService.GetXRAYImage(cameraImageCaptureRequest);
+            
             return cameraImageResponse;
+            
+            
         }
+      /*  private async void Wait10sec(object sender, System.EventArgs eventArgs)
+        {
+            System.Threading.Thread.Sleep(10000);
+            busy = false;
+        }*/
     }
 }
