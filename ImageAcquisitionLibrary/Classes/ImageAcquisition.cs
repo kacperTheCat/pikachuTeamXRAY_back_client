@@ -7,6 +7,12 @@ using System.Diagnostics;
 using System;
 using System.Text;
 using System.IO;
+using System.Drawing.Imaging;
+using System.Drawing;
+using System.Windows.Media.Imaging;
+using System.Linq;
+using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 namespace ImageAcquisitionLibrary.Classes
 {
@@ -32,26 +38,58 @@ namespace ImageAcquisitionLibrary.Classes
 
         }
 
-        public void SaveImage(string base64StringImage)
+        public void SaveImage(CameraImageCaptureRequest cameraImageCaptureRequest,string base64StringImage)
         {
-            var bytes = Convert.FromBase64String(base64StringImage);
-            using (var imageFile = new FileStream(System.AppDomain.CurrentDomain.BaseDirectory+"c.jpg", FileMode.Create))
+            var pathToStorageDirectory = System.AppDomain.CurrentDomain.BaseDirectory + "storage";
+            int fileInStorageDirectoryCounter = Directory.GetFiles(pathToStorageDirectory, "*", SearchOption.TopDirectoryOnly).Length;
+            var pathToCurrentlyTakenImage = System.AppDomain.CurrentDomain.BaseDirectory + "storage/"+ fileInStorageDirectoryCounter + "_rtgimage_"+cameraImageCaptureRequest.imageDate+"_" +  cameraImageCaptureRequest.imageTime.Replace(":","_")+".jpg";
+
+            var currentlyTakenImagesInBytes = Convert.FromBase64String(base64StringImage);
+            using (var currentImageFile = new FileStream(pathToCurrentlyTakenImage, FileMode.Create))
             {
-                imageFile.Write(bytes, 0, bytes.Length);
-                imageFile.Flush();
+                currentImageFile.Write(currentlyTakenImagesInBytes, 0, currentlyTakenImagesInBytes.Length);
+                currentImageFile.Flush();
             }
+
+            
+            FileStream currentImageFileStream = new FileStream(pathToCurrentlyTakenImage, FileMode.Open,FileAccess.Read,FileShare.Read);
+
+            BitmapMetadata myBitmapMetadata = new BitmapMetadata("jpg");
+            JpegBitmapEncoder jpegBitmapEncoder = new JpegBitmapEncoder();
+            myBitmapMetadata.DateTaken = cameraImageCaptureRequest.imageDate+" "+cameraImageCaptureRequest.imageTime;
+            myBitmapMetadata.Comment = "Brightness:"+cameraImageCaptureRequest.light+";Contrast:" + cameraImageCaptureRequest.contrast+";Image negative:"+cameraImageCaptureRequest.blackWhite+";";
+            var authorList = new List<string>();
+            authorList.Add(cameraImageCaptureRequest.user);
+            ReadOnlyCollection<string> read = new ReadOnlyCollection<string>(authorList);
+            myBitmapMetadata.Author = read;
+
+            JpegBitmapDecoder jpegBitmapDecoder = new JpegBitmapDecoder(currentImageFileStream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.OnLoad);
+            currentImageFileStream.Close();
+
+            jpegBitmapEncoder.Frames.Add(
+             BitmapFrame.Create(
+                jpegBitmapDecoder.Frames[0],
+                jpegBitmapDecoder.Frames[0].Thumbnail,
+                myBitmapMetadata,
+                jpegBitmapDecoder.ColorContexts)
+              );
+
+            FileStream CurrentImageFileStreamCopy = new FileStream(pathToCurrentlyTakenImage, FileMode.Create, FileAccess.ReadWrite, FileShare.None);
+            jpegBitmapEncoder.Save(CurrentImageFileStreamCopy);
+            CurrentImageFileStreamCopy.Close();
+            CurrentImageFileStreamCopy.Dispose();
         }
 
-        public async Task<CameraImageResponse> GetImage(CameraImageCaptureRequest rtgParametersRequest)
+        public async Task<CameraImageResponse> GetImage(CameraImageCaptureRequest cameraImageCaptureRequest)
         {
             HttpClient client = new HttpClient();
-            StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(rtgParametersRequest), Encoding.UTF8, "application/json");
+            StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(cameraImageCaptureRequest), Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync("http://localhost:63766/api/camera/capture", rtgParametersStringContent);
             response.EnsureSuccessStatusCode();
-            CreateCaptureLogForImage(JsonConvert.SerializeObject(rtgParametersRequest));
+            CreateCaptureLogForImage(JsonConvert.SerializeObject(cameraImageCaptureRequest));
             string responseBody = await response.Content.ReadAsStringAsync();
             var convertedResponseBody = JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
-            SaveImage(convertedResponseBody.Base64);
+            SaveImage(cameraImageCaptureRequest, convertedResponseBody.Base64);
             return convertedResponseBody;
         }
     }

@@ -13,6 +13,9 @@ namespace ContractLibrary.Models
         public bool blackWhite;
         public string patientName;
         public string user;
+        public string machineIpAddress;
+        public int imageId;
+        public string imageName;
         public string imageDate;
         public string imageTime;
     }
