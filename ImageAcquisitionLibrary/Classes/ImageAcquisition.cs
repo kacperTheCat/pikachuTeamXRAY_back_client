@@ -88,12 +88,14 @@ namespace ImageAcquisitionLibrary.Classes
             int machineID = cameraImageCaptureRequest.machineID;
             HttpClient client = new HttpClient();
             StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(cameraImageCaptureRequest), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync("http://"+RTGMachines.RTGMachineAddress[machineID]+"/api/camera/capture", rtgParametersStringContent);
+            //HttpResponseMessage response = await client.PostAsync("http://"+RTGMachines.RTGMachineAddress[machineID]+"/api/camera/capture", rtgParametersStringContent);
+            HttpResponseMessage response = await client.PostAsync("http://localhost:63766/api/camera/capture", rtgParametersStringContent);
             response.EnsureSuccessStatusCode();
             CreateCaptureLogForImage(JsonConvert.SerializeObject(cameraImageCaptureRequest));
             string responseBody = await response.Content.ReadAsStringAsync();
             var convertedResponseBody = JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
-            SaveImage(cameraImageCaptureRequest, convertedResponseBody.Base64);
+            if(convertedResponseBody.errorMessage == null)
+                SaveImage(cameraImageCaptureRequest, convertedResponseBody.Base64);
             return convertedResponseBody;
         }
     }
