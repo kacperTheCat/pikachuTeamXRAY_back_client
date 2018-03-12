@@ -18,7 +18,7 @@ namespace ImageAcquisitionLibrary.Classes
             var auditLog = new AuditLogResponse();
             var auditLogList = new List<AuditLogResponse>();
             // Read the file and display it line by line.  
-            if (File.Exists(@"c:\PikachuTeam\log.txt")){
+            if (File.Exists(System.AppDomain.CurrentDomain.BaseDirectory + "log.txt")){
                 System.IO.StreamReader file =
                     new System.IO.StreamReader(System.AppDomain.CurrentDomain.BaseDirectory+"log.txt");
                 while ((logLine = file.ReadLine()) != null)

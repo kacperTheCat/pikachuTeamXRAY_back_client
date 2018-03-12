@@ -64,9 +64,9 @@ namespace ImageAcquisitionLibrary.Classes
             BitmapMetadata myBitmapMetadata = new BitmapMetadata("jpg");
             JpegBitmapEncoder jpegBitmapEncoder = new JpegBitmapEncoder();
             myBitmapMetadata.DateTaken = cameraImageCaptureRequest.imageDate+" "+cameraImageCaptureRequest.imageTime;
-            myBitmapMetadata.Comment = "Brightness:"+cameraImageCaptureRequest.light+";Contrast:" + cameraImageCaptureRequest.contrast+";Image negative:"+cameraImageCaptureRequest.blackWhite+";";
+            myBitmapMetadata.Comment = "Brightness:"+cameraImageCaptureRequest.light+";Contrast:" + cameraImageCaptureRequest.contrast+";Image negative:"+cameraImageCaptureRequest.negative+";";
             var authorList = new List<string>();
-            authorList.Add(cameraImageCaptureRequest.user);
+            authorList.Add(cameraImageCaptureRequest.userName);
             ReadOnlyCollection<string> read = new ReadOnlyCollection<string>(authorList);
             myBitmapMetadata.Author = read;
 
@@ -90,7 +90,7 @@ namespace ImageAcquisitionLibrary.Classes
          public async Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest)
         {
             //int machineID = rtgParametersRequest.machineID;
-            int machineID = rtgParametersRequest.machineID;
+            int machineID = cameraImageCaptureRequest.machineID;
             HttpClient client = new HttpClient();
 
             StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(cameraImageCaptureRequest), Encoding.UTF8, "application/json");
