@@ -21,13 +21,9 @@ namespace ImageAcquisitionLibrary.Classes
     public class ImageAcquisition : IImageAcquisition
     {
         public async Task<CameraImageResponse> GetPerviewImage(int machineID)
-        {
-            //int machineID = 1;
-            HttpClient client = new HttpClient();
-            /// HttpResponseMessage response = await client.GetAsync("http://localhost:63766/api/camera");
-            HttpResponseMessage response = await client.GetAsync("http://"+ RTGMachines.RTGMachineAddress[machineID] + "/api/camera");
-            //HttpResponseMessage response = await client.GetAsync("http://10.28.14.34/api/camera");
-            //HttpResponseMessage response = await client.GetAsync()
+        {          
+            HttpClient client = new HttpClient();           
+            HttpResponseMessage response = await client.GetAsync("http://"+ RTGMachines.RTGMachineAddress[machineID] + "/api/camera");            
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
@@ -88,13 +84,11 @@ namespace ImageAcquisitionLibrary.Classes
         }
 
          public async Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest)
-        {
-            //int machineID = rtgParametersRequest.machineID;
+        {            
             int machineID = cameraImageCaptureRequest.machineID;
             HttpClient client = new HttpClient();
-
             StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(cameraImageCaptureRequest), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync("http://localhost:63766/api/camera/capture", rtgParametersStringContent);
+            HttpResponseMessage response = await client.PostAsync("http://"+RTGMachines.RTGMachineAddress[machineID]+"/api/camera/capture", rtgParametersStringContent);
             response.EnsureSuccessStatusCode();
             CreateCaptureLogForImage(JsonConvert.SerializeObject(cameraImageCaptureRequest));
             string responseBody = await response.Content.ReadAsStringAsync();
