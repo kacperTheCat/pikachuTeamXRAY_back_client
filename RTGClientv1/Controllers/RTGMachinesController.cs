@@ -15,7 +15,8 @@ namespace RTGClientv1.Controllers
 {
     public class RTGMachinesController : ApiController
     {
-       
+        [HttpGet]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // GET: api/RTGMachines       
         public List<RTGMachines> GetRTGMachines()
         {
