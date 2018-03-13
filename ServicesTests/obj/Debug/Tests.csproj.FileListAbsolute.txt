@@ -125,7 +125,6 @@ C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\De
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\Microsoft.ApplicationInsights.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\System.ValueTuple.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\System.Web.Http.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\System.Web.Optimization.xml
 C:\Users\rymszmon\source\webapi\pikachuTeamXRAY_back_client\ServicesTests\bin\Debug\System.Web.Mvc.xml
