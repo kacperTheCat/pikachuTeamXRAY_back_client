@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ContractLibrary.Models
 {
-    public class RTGMachines
+    public static class RTGMachinesList
     {
-        public string Machine { get; set; }
+        public static string[] RTGMachineAddress = { "10.28.14.34", "10.28.68.143" };
     }
 }

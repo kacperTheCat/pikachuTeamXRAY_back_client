@@ -54,6 +54,7 @@
     <Compile Include="Models\CameraImageCaptureRequest.cs" />
     <Compile Include="Models\LoginValidationRequest.cs" />
     <Compile Include="Models\LoginValidationResponse.cs" />
+    <Compile Include="Models\RTGMachinesList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
