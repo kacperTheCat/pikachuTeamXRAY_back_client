@@ -18,12 +18,12 @@ namespace RTGClientv1.Controllers
         }
 
         // GET: api/Camera
-        [HttpGet]
+        [HttpGet()]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public Task<CameraImageResponse> GetPreviewImage(int machineID)
+        public async Task<CameraImageResponse> GetPreviewImage(int id)
 
         {
-            var cameraImageResponse = _imageService.GetPerviewImage(machineID);
+            var cameraImageResponse = await _imageService.GetPerviewImage(id);
 
             return cameraImageResponse;
         }

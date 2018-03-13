@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace RTGClientv1.Controllers
 {
@@ -18,6 +19,7 @@ namespace RTGClientv1.Controllers
             _auditLogsService = auditLogsService;
         }
         // GET: api/AuditLogs
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public List<AuditLogResponse> GetAuditLogs()
         {
             return _auditLogsService.GetAuditLogs();

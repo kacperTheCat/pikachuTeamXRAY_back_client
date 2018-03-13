@@ -19,7 +19,7 @@ namespace ContractLibrary.Models
 
         public CameraImageCaptureRequest() {
             imageDate = DateTime.Now.ToShortDateString();
-            imageTime = DateTime.Now.ToLongTimeString();
+            imageTime = DateTime.Now.ToShortTimeString();
         }
 
     }
