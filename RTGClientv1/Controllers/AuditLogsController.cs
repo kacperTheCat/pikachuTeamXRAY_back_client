@@ -18,6 +18,8 @@ namespace RTGClientv1.Controllers
         {
             _auditLogsService = auditLogsService;
         }
+        [HttpGet]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // GET: api/AuditLogs
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         public List<AuditLogResponse> GetAuditLogs()
