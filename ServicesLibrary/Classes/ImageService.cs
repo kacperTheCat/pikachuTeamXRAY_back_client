@@ -26,9 +26,9 @@ namespace ServicesLibrary.Classes
 
             return cameraImageResponse;
         }
-        public async Task<CameraImageResponse> GetPerviewImage(int machineID)
+        public async Task<CameraImageResponse> GetPreviewImage()
         {
-            var cameraImageResponse = await _imageAcquisition.GetPerviewImage(machineID);
+            var cameraImageResponse = await _imageAcquisition.GetPreviewImage();
 
             return cameraImageResponse;
         }

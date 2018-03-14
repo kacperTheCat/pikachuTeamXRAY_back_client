@@ -6,6 +6,6 @@ namespace ContractLibrary.Interfaces
 {
     public interface IConnectionDetails
     {
-        Task<ConnectionDetailsResponse> GetDetails(int machineID);
+        Task<ConnectionDetailsResponse> GetDetails();
     }
 }

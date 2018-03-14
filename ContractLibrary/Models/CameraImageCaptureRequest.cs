@@ -14,8 +14,7 @@ namespace ContractLibrary.Models
         public string patientName;
         public string userName;
         public string imageDate;
-        public string imageTime;
-        public int machineID;
+        public string imageTime;        
 
         public CameraImageCaptureRequest() {
             imageDate = DateTime.Now.ToShortDateString();

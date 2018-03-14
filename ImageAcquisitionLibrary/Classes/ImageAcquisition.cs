@@ -20,8 +20,9 @@ namespace ImageAcquisitionLibrary.Classes
 {
     public class ImageAcquisition : IImageAcquisition
     {
-        public async Task<CameraImageResponse> GetPerviewImage(int machineID)
-        {          
+        public async Task<CameraImageResponse> GetPreviewImage()
+        {
+            int machineID = RTGMachinesList.chosenMachineID;
             HttpClient client = new HttpClient();           
             HttpResponseMessage response = await client.GetAsync("http://"+ RTGMachinesList.RTGMachineAddress[machineID] + "/api/camera");            
             response.EnsureSuccessStatusCode();
@@ -84,8 +85,9 @@ namespace ImageAcquisitionLibrary.Classes
         }
 
          public async Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest)
-        {            
-            int machineID = cameraImageCaptureRequest.machineID;
+        {
+            //int machineID = cameraImageCaptureRequest.machineID;
+            int machineID = RTGMachinesList.chosenMachineID;
             HttpClient client = new HttpClient();
             StringContent rtgParametersStringContent = new StringContent(JsonConvert.SerializeObject(cameraImageCaptureRequest), Encoding.UTF8, "application/json");
             //HttpResponseMessage response = await client.PostAsync("http://"+RTGMachinesList.RTGMachineAddress[machineID]+"/api/camera/capture", rtgParametersStringContent);

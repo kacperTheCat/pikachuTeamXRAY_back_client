@@ -31,7 +31,17 @@ namespace RTGClientv1.Controllers
             return rTGMachines;
         }
 
-        
+        [HttpPost]
+        [Route("api/RTGMachines/connect")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        public void SetRTGMachine([FromBody]int MachineID)
+        {
+
+            RTGMachinesList.chosenMachineID = MachineID;
+            
+        }
+
+
 
     }
 }
