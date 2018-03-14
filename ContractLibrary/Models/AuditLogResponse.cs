@@ -10,10 +10,10 @@ namespace ContractLibrary.Models
     {
         public int light;
         public int contrast;
-        public bool blackWhite;
+        public bool negative;
         public string patientName;
-        public string user;
-        public string machineIpAddress;
+        public string userName;
+        public string machineID;
         public int imageId;
         public string imageName;
         public string imageDate;
