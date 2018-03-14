@@ -17,3 +17,13 @@
 {"light":0,"contrast":-128,"negative":true,"patientName":"Kowalski","userName":"Nowak","imageDate":"12.03.2018","imageTime":"16:20:16","machineID":1}
 {"light":0,"contrast":-128,"negative":true,"patientName":"Kowalski","userName":"Nowak","imageDate":"12.03.2018","imageTime":"16:26:23","machineID":1}
 {"light":0,"contrast":-128,"negative":true,"patientName":"Kowalski","userName":"Nowak","imageDate":"12.03.2018","imageTime":"16:26:21","machineID":1}
+{"light":0,"contrast":0,"negative":false,"patientName":"kacper","userName":null,"imageDate":"14.03.2018","imageTime":"11:53","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":null,"userName":null,"imageDate":"14.03.2018","imageTime":"11:53","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":null,"userName":"admin","imageDate":"14.03.2018","imageTime":"11:54","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":null,"userName":null,"imageDate":"14.03.2018","imageTime":"12:01","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":null,"userName":null,"imageDate":"14.03.2018","imageTime":"12:01","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":"affa","userName":null,"imageDate":"14.03.2018","imageTime":"12:02","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":null,"userName":"admin","imageDate":"14.03.2018","imageTime":"12:02","machineID":0}
+{"light":0,"contrast":0,"negative":false,"patientName":null,"userName":null,"imageDate":"14.03.2018","imageTime":"12:08","machineID":0}
+{"light":0,"contrast":138,"negative":false,"patientName":null,"userName":null,"imageDate":"14.03.2018","imageTime":"12:08","machineID":0}
+{"light":0,"contrast":43,"negative":true,"patientName":null,"userName":null,"imageDate":"14.03.2018","imageTime":"12:09","machineID":0}
