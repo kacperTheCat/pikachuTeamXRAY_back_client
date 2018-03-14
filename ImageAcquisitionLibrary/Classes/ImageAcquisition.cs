@@ -23,7 +23,7 @@ namespace ImageAcquisitionLibrary.Classes
         public async Task<CameraImageResponse> GetPerviewImage(int machineID)
         {          
             HttpClient client = new HttpClient();           
-            HttpResponseMessage response = await client.GetAsync("http://"+ RTGMachinesList.RTGMachineAddress[machineID] + "/api/camera");            
+            HttpResponseMessage response = await client.GetAsync("http://localhost:63766/api/camera");            
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
@@ -59,7 +59,8 @@ namespace ImageAcquisitionLibrary.Classes
 
             BitmapMetadata myBitmapMetadata = new BitmapMetadata("jpg");
             JpegBitmapEncoder jpegBitmapEncoder = new JpegBitmapEncoder();
-            myBitmapMetadata.DateTaken = cameraImageCaptureRequest.imageDate+" "+cameraImageCaptureRequest.imageTime;
+            var dataConvertion = cameraImageCaptureRequest.imageDate.Substring(3, 2) + "/" + cameraImageCaptureRequest.imageDate.Substring(0, 2) + "/" + cameraImageCaptureRequest.imageDate.Substring(6, 4);
+            myBitmapMetadata.DateTaken = dataConvertion + " " + cameraImageCaptureRequest.imageTime.Substring(0, 5);
             myBitmapMetadata.Comment = "Brightness:"+cameraImageCaptureRequest.light+";Contrast:" + cameraImageCaptureRequest.contrast+";Image negative:"+cameraImageCaptureRequest.negative+";";
             var authorList = new List<string>();
             authorList.Add(cameraImageCaptureRequest.userName);
