@@ -47,6 +47,7 @@
     <Compile Include="Interfaces\ICameraImage.cs" />
     <Compile Include="Interfaces\IConnectionDetails.cs" />
     <Compile Include="Models\AuditLogImageResponse.cs" />
+    <Compile Include="Models\RTGMachineRequest.cs" />
     <Compile Include="Models\RTGMachines.cs" />
     <Compile Include="Interfaces\ILoginValidation.cs" />
     <Compile Include="Models\AuditLogResponse.cs" />
