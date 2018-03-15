@@ -47,9 +47,16 @@ namespace ImageAcquisitionLibrary.Classes
 
         public string GetRequestedImageBase64(string imageName)
         {
-                Byte[] bytes = File.ReadAllBytes(System.AppDomain.CurrentDomain.BaseDirectory + "storage/" + imageName + ".jpg");
-                String file = Convert.ToBase64String(bytes);
-                return file;
+            if (File.Exists(System.AppDomain.CurrentDomain.BaseDirectory + "storage/" + imageName + ".jpg") == true)
+            {
+                Byte[] requestedImageBytes = File.ReadAllBytes(System.AppDomain.CurrentDomain.BaseDirectory + "storage/" + imageName + ".jpg");
+                String requestedImageBase64 = Convert.ToBase64String(requestedImageBytes);
+                return requestedImageBase64;
+            }
+            else
+            {
+                throw new FileNotFoundException("File do not exists");
+            }
         }
     }
 }
