@@ -10,5 +10,6 @@ namespace ContractLibrary.Interfaces
     public interface IAuditLog
     {
         List<AuditLogResponse> GetAuditLogs();
+        AuditLogImageResponse GetImageByName(string imageName);
     }
 }

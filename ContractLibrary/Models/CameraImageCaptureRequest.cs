@@ -15,11 +15,12 @@ namespace ContractLibrary.Models
         public string userName;
         public string imageDate;
         public string imageTime;
-        public int machineID;
+        public string xRayImageName;
+
 
         public CameraImageCaptureRequest() {
             imageDate = DateTime.Now.ToShortDateString();
-            imageTime = DateTime.Now.ToShortTimeString();
+            imageTime = DateTime.Now.ToLongTimeString();
         }
 
     }

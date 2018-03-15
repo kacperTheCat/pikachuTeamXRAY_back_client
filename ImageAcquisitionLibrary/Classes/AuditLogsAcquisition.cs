@@ -34,5 +34,22 @@ namespace ImageAcquisitionLibrary.Classes
             }
             return auditLogList;
         }
+
+        public AuditLogImageResponse GetImageByName(string imageName)
+        {
+            var auditLogImageResponse = new AuditLogImageResponse()
+            {
+                xRayImageName = imageName
+            };
+            auditLogImageResponse.base64 = GetRequestedImageBase64(imageName);
+            return auditLogImageResponse;
+        }
+
+        public string GetRequestedImageBase64(string imageName)
+        {
+                Byte[] bytes = File.ReadAllBytes(System.AppDomain.CurrentDomain.BaseDirectory + "storage/" + imageName + ".jpg");
+                String file = Convert.ToBase64String(bytes);
+                return file;
+        }
     }
 }

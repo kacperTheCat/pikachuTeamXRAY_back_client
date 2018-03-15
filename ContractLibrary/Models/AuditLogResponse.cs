@@ -14,8 +14,7 @@ namespace ContractLibrary.Models
         public string patientName;
         public string userName;
         public string machineID;
-        public int imageId;
-        public string imageName;
+        public string xRayImageName;
         public string imageDate;
         public string imageTime;
     }
