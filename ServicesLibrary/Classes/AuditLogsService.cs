@@ -21,5 +21,10 @@ namespace ServicesLibrary.Classes
         {
             return _auditLogsAcquisition.GetAuditLogs();
         }
+
+        public AuditLogImageResponse GetImageByName(string imageName)
+        {
+            return _auditLogsAcquisition.GetImageByName(imageName);
+        }
     }
 }

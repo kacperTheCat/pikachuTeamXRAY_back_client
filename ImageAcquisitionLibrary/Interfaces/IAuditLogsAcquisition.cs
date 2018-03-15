@@ -9,5 +9,6 @@ namespace ImageAcquisitionLibrary.Interfaces
 {
     public interface IAuditLogsAcquisition : IAuditLog
     {
+        String GetRequestedImageBase64(string imageName);
     }
 }

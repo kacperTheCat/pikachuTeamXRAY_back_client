@@ -34,8 +34,7 @@ namespace ImageAcquisitionLibrary.Classes
         }
 
         public void CreateCaptureLogForImage(string image)
-        {
-            
+        {    
             using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(System.AppDomain.CurrentDomain.BaseDirectory+"log.txt", true))
             {
@@ -48,8 +47,8 @@ namespace ImageAcquisitionLibrary.Classes
         public void SaveImage(CameraImageCaptureRequest cameraImageCaptureRequest,string base64StringImage)
         {
             var pathToStorageDirectory = System.AppDomain.CurrentDomain.BaseDirectory + "storage";
-            int fileInStorageDirectoryCounter = Directory.GetFiles(pathToStorageDirectory, "*", SearchOption.TopDirectoryOnly).Length;
-            var pathToCurrentlyTakenImage = System.AppDomain.CurrentDomain.BaseDirectory + "storage/"+ fileInStorageDirectoryCounter + "_rtgimage_"+cameraImageCaptureRequest.imageDate+"_" +  cameraImageCaptureRequest.imageTime.Replace(":","_")+".jpg";
+            string pictureName = "TWA_RTG_Image_" + cameraImageCaptureRequest.imageDate.Replace(".","_") + "_" + cameraImageCaptureRequest.imageTime.Replace(":", "_");
+            var pathToCurrentlyTakenImage = System.AppDomain.CurrentDomain.BaseDirectory + "storage/" + pictureName+ ".jpg";
 
             var currentlyTakenImagesInBytes = Convert.FromBase64String(base64StringImage);
             using (var currentImageFile = new FileStream(pathToCurrentlyTakenImage, FileMode.Create))
@@ -86,6 +85,8 @@ namespace ImageAcquisitionLibrary.Classes
             jpegBitmapEncoder.Save(CurrentImageFileStreamCopy);
             CurrentImageFileStreamCopy.Close();
             CurrentImageFileStreamCopy.Dispose();
+            cameraImageCaptureRequest.xRayImageName = pictureName;
+            CreateCaptureLogForImage(JsonConvert.SerializeObject(cameraImageCaptureRequest));
         }
 
          public async Task<CameraImageResponse> GetXRAYImage(CameraImageCaptureRequest cameraImageCaptureRequest)
@@ -98,7 +99,6 @@ namespace ImageAcquisitionLibrary.Classes
             HttpResponseMessage response = await client.PostAsync("http://"+RTGMachinesList.RTGMachineAddress[machineID]+"/api/camera/capture", rtgParametersStringContent);
             //HttpResponseMessage response = await client.PostAsync("http://localhost:63766/api/camera/capture", rtgParametersStringContent);
             response.EnsureSuccessStatusCode();
-            CreateCaptureLogForImage(JsonConvert.SerializeObject(cameraImageCaptureRequest));
             string responseBody = await response.Content.ReadAsStringAsync();
             var convertedResponseBody = JsonConvert.DeserializeObject<CameraImageResponse>(responseBody);
             if(convertedResponseBody.errorMessage == null)

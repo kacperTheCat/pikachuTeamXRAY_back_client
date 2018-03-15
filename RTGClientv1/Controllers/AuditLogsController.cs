@@ -25,5 +25,12 @@ namespace RTGClientv1.Controllers
         {
             return _auditLogsService.GetAuditLogs();
         }
+        [HttpGet]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        // GET: api/AuditLogs/{pictureName}
+        public AuditLogImageResponse GetAuditLogPicture(string id)
+        {
+            return _auditLogsService.GetImageByName(id);
+        }
     }
 }
