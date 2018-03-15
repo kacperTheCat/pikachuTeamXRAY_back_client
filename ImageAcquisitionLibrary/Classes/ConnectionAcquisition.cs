@@ -14,7 +14,8 @@ namespace ImageAcquisitionLibrary.Classes
             
             var connectionDetailsResponse = new ConnectionDetailsResponse();            
             HttpClient client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync("http://"+RTGMachinesList.RTGMachineAddress[RTGMachinesList.chosenMachineID]+ "/api/connectiondetails");
+            //HttpResponseMessage response = await client.GetAsync("http://"+RTGMachinesList.RTGMachineAddress[RTGMachinesList.chosenMachineID]+ "/api/connectiondetails");
+            HttpResponseMessage response = await client.GetAsync("http://localhost:63766/api/connectiondetails");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             response.EnsureSuccessStatusCode();

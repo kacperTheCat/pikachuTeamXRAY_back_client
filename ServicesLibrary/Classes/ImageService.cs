@@ -13,6 +13,7 @@ namespace ServicesLibrary.Classes
     {
         private readonly IImageAcquisition _imageAcquisition;
         public Bitmap image;
+        
 
         public ImageService(IImageAcquisition imageAcquisition)
         {
@@ -28,6 +29,7 @@ namespace ServicesLibrary.Classes
         }
         public async Task<CameraImageResponse> GetPreviewImage()
         {
+            
             var cameraImageResponse = await _imageAcquisition.GetPreviewImage();
 
             return cameraImageResponse;
