@@ -15,14 +15,12 @@ namespace RTGClientv1.Controllers
 {
     public class RTGMachinesController : ApiController
     {
-        [HttpGet]
-        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // GET: api/RTGMachines       
         public List<RTGMachines> GetRTGMachines()
         {
 
             List<RTGMachines> rTGMachines = new List<RTGMachines>();
-            for(int i=0; i<RTGMachinesList.RTGMachineAddress.Length; i++)
+            for (int i = 0; i < RTGMachinesList.RTGMachineAddress.Length; i++)
             {
                 RTGMachines rTGMachine = new RTGMachines();
                 rTGMachine.Machine = RTGMachinesList.RTGMachineAddress[i];
@@ -32,7 +30,18 @@ namespace RTGClientv1.Controllers
             return rTGMachines;
         }
 
-        
+        [HttpPost]
+        [Route("api/RTGMachines/connect")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        public string SetRTGMachine([FromBody]RTGMachineRequest rTGMachineRequest)
+        {
+
+            RTGMachinesList.chosenMachineID = rTGMachineRequest.chosenMachineID;
+            return "Succesfully connected";
+        }
+
+
+
 
     }
 }
