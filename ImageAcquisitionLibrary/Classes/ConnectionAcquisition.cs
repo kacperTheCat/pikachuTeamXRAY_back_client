@@ -11,6 +11,8 @@ namespace ImageAcquisitionLibrary.Classes
     {
         public async Task<ConnectionDetailsResponse> GetDetails()
         {
+            if (RTGMachinesList.chosenMachineID == -1)
+                throw new Exception("Please chose a device");
             var connectionDetailsResponse = new ConnectionDetailsResponse();            
             HttpClient client = new HttpClient();
             int machineID = RTGMachinesList.chosenMachineID;
