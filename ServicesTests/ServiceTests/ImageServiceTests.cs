@@ -25,16 +25,16 @@ namespace ServicesLibrary.Classes.Tests
         }
 
 
-        [TestMethod()]
-        public void GreyscaleImageTest()
-        {
-            Bitmap image = new Bitmap(Image.FromFile(@"C:\Users\matutluk\Desktop\1.jpg"));
+        //[TestMethod()]
+       // public void GreyscaleImageTest()
+       // {
+           // Bitmap image = new Bitmap(Image.FromFile(@"C:\Users\matutluk\Desktop\1.jpg"));
             //Bitmap GreyImage = null;
-            ImageService service = new ImageService(_imageAcquisition);
+           // ImageService service = new ImageService(_imageAcquisition);
            // service.image = service.GreyscaleImage(image);
-            service.image.Should().NotBeNull();
+            //service.image.Should().NotBeNull();
             //Assert.Fail();
-        }
+        //}
 
         //[TestMethod()]
         //public void FromBase64ConverterTest()
