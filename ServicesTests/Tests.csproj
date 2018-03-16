@@ -107,6 +107,7 @@
     <Compile Include="AuditLogTests\AuditLogsTests.cs" />
     <Compile Include="CameraImagesTests\CAmeraImageTests.cs" />
     <Compile Include="ControllersTests\RTGParametersControllerTests.cs" />
+    <Compile Include="LoginValidationTests\LoginValidationTest.cs" />
     <Compile Include="ServiceTests\ConnectionServiceTests.cs" />
     <Compile Include="ServiceTests\ImageServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
